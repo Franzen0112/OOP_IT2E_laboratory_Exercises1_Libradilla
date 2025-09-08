@@ -2,10 +2,10 @@ public class Car {
     private String color;
     private String plateNo;
     private String chassisNo;
-    private String vehicleNumber;     // bagong attribute
-    private int vehicleCapacity;      // bagong attribute
+    private String vehicleNumber;     
+    private int vehicleCapacity;      
 
-    // No argument constructor
+   
     public Car() {
         this.color = "No Color";
         this.plateNo = "No PlateNumber";
@@ -38,11 +38,9 @@ public class CarTester {
     public static void main(String[] args) {
         // Using constructor with arguments
         Car c1 = new Car("Yellow", "KAW12345", "CHS56789", "VHC001", 5);
-
-        // Using no-argument constructor (default values)
         Car c2 = new Car();
 
-        // Display info of both objects
+      
         c1.displayInfo();
         System.out.println("--------------------");
         c2.displayInfo();
